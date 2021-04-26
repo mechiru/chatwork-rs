@@ -3,6 +3,13 @@ name = "chatwork"
 version = "0.1.0"
 authors = ["mechiru <u9053u6d41@gmail.com>"]
 edition = "2018"
+license = "MIT OR Apache-2.0"
+description = "Chatwork API client."
+repository = "https://github.com/mechiru/chatwork-rs"
+documentation = "https://docs.rs/chatwork-rs"
+categories = ["api-bindings"]
+keywords = ["chatwork", "chat"]
+readme = "README.md"
 
 [dev-dependencies]
 tokio = { version = "1.4", features = ["rt-multi-thread", "macros"] }
