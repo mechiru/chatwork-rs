@@ -1,5 +1,9 @@
 # chatwork
 
+[![ci](https://github.com/mechiru/chatwork-rs/workflows/ci/badge.svg)](https://github.com/mechiru/chatwork-rs/actions?query=workflow:ci)
+[![Rust Documentation](https://docs.rs/chatwork/badge.svg)](https://docs.rs/chatwork)
+[![Latest Version](https://img.shields.io/crates/v/chatwork.svg)](https://crates.io/crates/chatwork)
+
 A client implementation of [Chatwork](https://go.chatwork.com/) API.
 
 
