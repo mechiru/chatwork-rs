@@ -28,6 +28,8 @@ pub(crate) struct PathAndQuery<'a, T> {
     pub query: Option<&'a T>,
 }
 
+// https://developer.chatwork.com/ja/endpoint_rooms.html
+// https://github.com/chatwork/api/blob/master/RAML/api-ja.raml
 #[derive(Clone)]
 pub struct Client {
     inner: reqwest::Client,
