@@ -90,9 +90,6 @@ mod test {
             v: List<'a, i64>,
         }
         assert_eq!(serde_urlencoded::to_string(&S { v: List(&Vec::new()) }).unwrap(), "v=");
-        assert_eq!(
-            serde_urlencoded::to_string(&S { v: List(&vec![1, 2, 3]) }).unwrap(),
-            "v=1%2C2%2C3"
-        );
+        assert_eq!(serde_urlencoded::to_string(&S { v: List(&[1, 2, 3]) }).unwrap(), "v=1%2C2%2C3");
     }
 }
