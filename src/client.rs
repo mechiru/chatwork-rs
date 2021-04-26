@@ -37,7 +37,7 @@ pub struct Client {
 }
 
 impl Client {
-    #[cfg(feature = "default")]
+    #[cfg(any(feature = "default", feature = "rustls-tls"))]
     pub fn new(api_token: impl AsRef<str>) -> Self {
         let config = Config::default();
 
@@ -66,7 +66,7 @@ impl Client {
         Self { inner, config }
     }
 
-    #[cfg(not(feature = "default"))]
+    #[cfg(not(any(feature = "default", feature = "rustls-tls")))]
     pub fn new_with(client: reqwest::Client) -> Self {
         Self { inner: client, config }
     }

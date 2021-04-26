@@ -22,5 +22,5 @@ reqwest = { version = "0.11", features = ["gzip", "json", "multipart"] }
 
 [features]
 default = ["reqwest/default"]
-trust-dns = ["reqwest/trust-dns"]
 rustls-tls = ["reqwest/rustls-tls"]
+trust-dns = ["reqwest/trust-dns"]
